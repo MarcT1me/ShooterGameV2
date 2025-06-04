@@ -1,0 +1,4 @@
+pygame
+typing_extensions
+pyglm==2.7.3
+loguru
