@@ -37,7 +37,7 @@ class DependencyResolver:
                 # Recursively loading all dependencies
                 dependencies = [self.loading_func(dep) for dep in asset_file.dependencies]
             except Exception as e:
-                raise Exception(f"Failed to load asset {asset_file.name}") from e
+                raise Exception(f"Failed to load asset {asset_file.path}") from e
             finally:
                 self._loading_stack.remove(cache_key)
 

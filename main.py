@@ -133,7 +133,7 @@ if __name__ == "__main__":
     Engine.App.reg_asset_types.extend(
         [
             Engine.assets.AssetType(
-                type_name="jsonConfigХ",
+                type_name="jsonConfig",
                 asset_loader=JsonConfigLoader()
             )
         ]
